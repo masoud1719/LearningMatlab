@@ -305,11 +305,29 @@ clc;clearvars;
 % fid = fopen("reza.txt","w");
 % fclose(fid)
 
-a = 10;
+% a = 10;
 % نوشتن یک خط در یک فایل متنی
 %fid = fopen('finaltest.txt','w');
 %fprintf(f);id, "%d",a);
 
 %fclose(fid
+% متدی برای پیدا کردن تعداد و مجموع اعداد بخش پذیر بر 3 و 5  تا یک عدد مشخص
+%function [t,s] = MyFind(number)
+%t = 0;
+%s = 0;
+%for c = 1:number
+%    if(mod(c,3) == 0 || mod(c,5) == 0)
+%        t = t+1;
+%        s = s + c;
+%    end
+%end
+%end
 
+%% متدی برای پیدا کردن فاکتوریل یک عدد
+%function [res] = Myfactorial(number)
+%res = 1;
+%for c = 1:number
+%    res = res * c;
+%end
+%end
 
