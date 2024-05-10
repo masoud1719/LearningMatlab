@@ -330,4 +330,51 @@ clc;clearvars;
 %    res = res * c;
 %end
 %end
+%% different plots 
+% plot3  plots coordinates in 3-D space.
+%t = 0:pi/50:10*pi;
+%st = sin(t);
+%ct = cos(t);
+%plot3(st,ct,t)
 
+% semilogx(X,Y) plots x- and y-coordinates using a base-10 logarithmic scale on the x-axis and a linear scale on the y-axis.
+%x = logspace(-1,2);
+%y = x;
+%semilogx(x,y)
+%grid on
+
+%% semilogy(X,Y) plots x- and y-coordinates using a linear scale on the x-axis and a base-10 logarithmic scale on the y-axis.
+%x = 1:100;
+%y = x.^2;
+%semilogy(x,y)
+%grid on
+
+%% loglog(X,Y) plots x- and y-coordinates using a base-10 logarithmic scale on the x-axis and the y-axis.
+%x = logspace(-1,2);
+%y = 2.^x;
+%loglog(x,y)
+%grid on
+
+%% surf(X,Y,Z) creates a three-dimensional surface plot, which is a three-dimensional surface that has solid edge colors and solid face colors. The function plots the values in matrix Z as heights above a grid in the x-y plane defined by X and Y. The color of the surface varies according to the heights specified by Z.
+%[X,Y] = meshgrid(1:0.5:10,1:20);
+%Z = sin(X) + cos(Y);
+%surf(X,Y,Z)
+
+%% Polynomial
+
+%% roots r = roots(p) returns the roots of the polynomial represented by p as a column vector. Input p is a vector containing n+1 polynomial coefficients, starting with the coefficient of x^n. A coefficient of 0 indicates an intermediate power that is not present in the equation. For example, p = [3 2 -2] represents the polynomial 3x^2+2x−2.
+%p = [3 -2 -4];
+%r = roots(p)
+
+%% polyval y = polyval(p,x) evaluates the polynomial p at each point in x. The argument p is a vector of length n+1 whose elements are the coefficients (in descending powers) of an nth-degree polynomial:
+%p = [3 2 1];
+%x = [5 7 9];
+%y = polyval(p,x)
+
+%% polyder k = polyder(p) returns the derivative of the polynomial represented by the coefficients in p,
+%p = [3 0 -2 0 1 5];
+%q = polyder(p)
+
+%% polyint q = polyint(p,k) returns the integral of the polynomial represented by the coefficients in p using a constant of integration k.
+% p = [3 0 -4 10 -25];
+% q = polyint(p)
